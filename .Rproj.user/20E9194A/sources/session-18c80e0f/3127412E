@@ -1,18 +1,18 @@
 {
-    "id": "5CCB4F3D",
-    "path": "~/GitHub/Proj_Quant_Econdata_2024.1/ScriptOfc.R",
-    "project_path": "ScriptOfc.R",
+    "id": "3127412E",
+    "path": "~/GitHub/Proj_Quant_Econdata_2024.1/codes/ScriptOfc.R",
+    "project_path": "codes/ScriptOfc.R",
     "type": "r_source",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1712960560138.0,
+    "created": 1712960652743.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "1,18",
+        "cursorPosition": "14,0",
         "scrollLine": "0"
     },
     "folds": "",
