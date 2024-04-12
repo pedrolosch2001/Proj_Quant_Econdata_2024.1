@@ -7,4 +7,4 @@
  A estratégia implementada será de Reversão a Média.
 
  Membros do Grupo:
- Pedro Vieira Maciel Cardozo Losch - Economia PUC-Rio
+ Pedro Vieira Maciel Cardozo Losch - 2311109
