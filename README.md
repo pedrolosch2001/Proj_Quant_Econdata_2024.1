@@ -8,3 +8,4 @@
 
  Membros do Grupo:
  Pedro Vieira Maciel Cardozo Losch - 2311109
+ João Pedro Araújo Valente - 2320477
