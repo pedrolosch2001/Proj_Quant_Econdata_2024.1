@@ -6,6 +6,6 @@
 
  A estratégia implementada será de Reversão a Média.
 
- Membros do Grupo:
+ Membros do Grupo: n\
  Pedro Vieira Maciel Cardozo Losch - 2311109
  João Pedro Araújo Valente - 2320477
