@@ -9,6 +9,8 @@
  Membros do Grupo: \
  Pedro Vieira Maciel Cardozo Losch - 2311109\
  João Pedro Araújo Valente - 2320477\
+ Arthur Guedes Adler - 2012442\
+ Bernardo Vergueiro de Andrade - 2211803\
  \
  Instrucoes sobre o comportamento do codigo:\
  \
@@ -26,7 +28,7 @@ Sera utilizado como benchamark para os backtests o IBOV: tq_get('^BVSP',...)\
 \
 v) Realizar as plotagens\
 \
-CHECKLIST ---------\
+CHECKLIST --------------------------------------------------------------------------\
 \
 i) Dados (V)\
 ii) IBOV (V)\
