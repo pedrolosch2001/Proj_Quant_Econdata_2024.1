@@ -28,9 +28,9 @@ v) Realizar as plotagens\
 \
 CHECKLIST ---------\
 \
-i) Dados (X)\
-ii) IBOV (X)\
-iii) Preparar os dados para modelagem (X)\
+i) Dados (V)\
+ii) IBOV (V)\
+iii) Preparar os dados para modelagem (V)\
 iv) Modelagem (X)\
 v) Backtest (X)\
 vi) Plot (X)\
