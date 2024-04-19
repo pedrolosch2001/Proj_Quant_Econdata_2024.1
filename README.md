@@ -24,4 +24,14 @@ iii) Implementar a estrategia nos ativos e modelar os resultados\
 iv) Realizar os backtests e analizar os resultados\
 Sera utilizado como benchamark para os backtests o IBOV: tq_get('^BVSP',...)\
 \
-v) Realizar as plotagens
+v) Realizar as plotagens\
+\
+CHECKLIST ---------\
+\
+i) Dados (X)\
+ii) IBOV (X)\
+iii) Preparar os dados para modelagem (X)\
+iv) Modelagem (X)\
+v) Backtest (X)\
+vi) Plot (X)\
+vii) Analise dos resultados e relatorio (X)\
