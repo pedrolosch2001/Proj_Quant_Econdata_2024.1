@@ -11,6 +11,8 @@
  João Pedro Araújo Valente - 2320477\
  Arthur Guedes Adler - 2012442\
  Bernardo Vergueiro de Andrade - 2211803\
+ Victor Carvalho Silva - 2320318\
+ Ana Raya Lobo Paiva - 2320593\
  \
  Instrucoes sobre o comportamento do codigo:\
  \
