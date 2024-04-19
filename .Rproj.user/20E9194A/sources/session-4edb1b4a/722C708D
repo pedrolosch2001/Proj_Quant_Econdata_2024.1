@@ -1,0 +1,28 @@
+{
+    "id": "722C708D",
+    "path": "~/GitHub/Proj_Quant_Econdata_2024.1/codes/script_rm.R",
+    "project_path": "codes/script_rm.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1713529455334.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "useRainbowParens": "true",
+        "cursorPosition": "46,2",
+        "scrollLine": "20"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1713530904,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1713530904205,
+    "read_only": false,
+    "read_only_alternatives": []
+}

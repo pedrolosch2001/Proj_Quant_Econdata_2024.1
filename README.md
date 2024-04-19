@@ -17,7 +17,7 @@
   De preferencia, comentar para que cada pacote serve\
  \
  ii) Informacoes dos ativos serao retiradas da API do Yahoo Finance via tidyquant::tq_get('acoes', ...)\
-Serao utilizados dados de 2019-01-01 ate 2023-12-31 tq_get('acao', from = '2019-01-01', to = '2023-12-31')\
+Serao utilizados dados de 2013-01-01 ate 2023-12-31 tq_get('acao', from = '2013-01-01', to = '2023-12-31')\
 \
 iii) Implementar a estrategia nos ativos e modelar os resultados\
 \
@@ -34,4 +34,4 @@ iii) Preparar os dados para modelagem (X)\
 iv) Modelagem (X)\
 v) Backtest (X)\
 vi) Plot (X)\
-vii) Analise dos resultados e relatorio (X)\
+vii) Analise dos resultados e relatorio (X)

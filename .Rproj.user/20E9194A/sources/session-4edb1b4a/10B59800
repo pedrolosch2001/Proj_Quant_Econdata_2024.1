@@ -3,7 +3,7 @@
     "path": "~/GitHub/Proj_Quant_Econdata_2024.1/codes/codigodia12Victor.R",
     "project_path": "codes/codigodia12Victor.R",
     "type": "r_source",
-    "hash": "1805873775",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1713482654385.0,
@@ -11,7 +11,9 @@
     "relative_order": 1,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "3,18",
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1712959908,
