@@ -1,0 +1,33 @@
+
+
+petr3 = ativos_filtrado %>% 
+  dplyr::filter(ticker == 'PETR3.SA') %>% 
+  print()
+
+df = petr3_teste %>% 
+  dplyr::mutate(SMA7 = TTR::SMA(acao, n = 7),
+                SMA15 = TTR::SMA(acao, n = 15)) %>% 
+  na.omit() %>% 
+  mutate(posicao = case_when(lag(SMA7) > lag(SMA15) ~ 1,
+                             lag(SMA7) < lag(SMA15) ~ -1,
+                             lag(SMA7) == lag(SMA15) ~ 0))
+  
+  
+
+ativos_lista = ativos_filtrado %>% 
+  split(f = .$ticker) %>% 
+  keep(function(x){
+    x$date %>% head(1) == "2013-01-02"
+  }) 
+
+ativos_lista = ativos_lista %>% 
+  map(function(x){
+    x %>% 
+      mutate(SMA7 = TTR::SMA(acao, n = 7),
+             SMA15 = TTR::SMA(acao, n = 15)) %>% 
+      na.omit() %>% 
+      mutate(posicao = case_when(lag(SMA7) > lag(SMA15) ~ 1,
+                                 lag(SMA7) < lag(SMA15) ~ -1,
+                                 lag(SMA7) == lag(SMA15) ~ 0))
+  })
+
