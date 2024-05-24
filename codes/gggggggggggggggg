@@ -1,0 +1,51 @@
+
+
+funcmax<-function(n1,n2){
+  
+  lista = ativos_lista %>% 
+    map(function(x){
+      x %>% 
+        mutate(SMA7 = TTR::SMA(acao, n = n1),
+               SMA15 = TTR::SMA(acao, n = n2)) %>% 
+        na.omit() %>% 
+        mutate(posicao = case_when(lag(SMA7) > lag(SMA15) ~ 1,
+                                   lag(SMA7) < lag(SMA15) ~ -1,
+                                   lag(SMA7) == lag(SMA15) ~ 0), 
+               retorno = case_when(posicao == 1 ~ acao/lag(acao) - 1,
+                                   posicao == 0 ~ NA,
+                                   posicao == -1 ~ lag(acao)/acao - 1)) %>% 
+        na.omit()
+    })
+  
+  carteira<-lista %>% 
+    bind_rows() %>% 
+    select(ticker, date, retorno) %>% 
+    pivot_wider(names_from = "ticker", values_from = "retorno") %>% 
+    mutate(portfolio=rowMeans(.[-1],na.rm=T))
+  
+  prod(carteira$portfolio+1)-1
+  
+}
+funcmax(20,35)
+
+df_janelas<-data.frame(sma_menor=sample(10:50,size=10^6,replace=T),
+                   sma_maior=sample(10:50,size=10^6,replace=T)) %>%
+  filter(sma_menor<sma_maior) %>% 
+  unique()
+
+
+# Separando Dfs para Teste e Backtest
+
+ativos_treino = ativos_lista %>% 
+  map(~.x %>%  filter(date < "2020-01-01"))
+
+ativos_teste = ativos_lista %>% 
+  map(~.x %>%  filter(date >= "2020-01-01"))
+
+
+# Fazendo o treino
+
+df_janelas %>% 
+  mutate(retorno = mapply(funcmax, ativos_treino, sma_menor, sma_maior))
+
+df_janelas$retorno =  mapply(funcmax, df_janelas$sma_menor, df_janelas$sma_maior)
